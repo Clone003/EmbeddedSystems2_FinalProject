@@ -25,29 +25,6 @@
       <data key="VT">BC</data>
     </node>
     <node id="n1">
-      <data key="BA">0x40000000</data>
-      <data key="BP">AXI_LITE_GPIO_BASEADDR</data>
-      <data key="HA">0x40000FFF</data>
-      <data key="HP">AXI_LITE_GPIO_HIGHADDR</data>
-      <data key="MA">Data</data>
-      <data key="MX">/processing_system7_0</data>
-      <data key="MI">M_AXI_GP0</data>
-      <data key="MS">SEG_PmodGPS_0_Reg0</data>
-      <data key="MV">xilinx.com:ip:processing_system7:5.5</data>
-      <data key="TM">both</data>
-      <data key="SX">/PmodGPS_0</data>
-      <data key="SI">AXI_LITE_GPIO</data>
-      <data key="SS">Reg0</data>
-      <data key="SV">digilentinc.com:IP:PmodGPS:1.1</data>
-      <data key="TU">register</data>
-      <data key="VT">AC</data>
-    </node>
-    <node id="n2">
-      <data key="VH">2</data>
-      <data key="VM">gps_design</data>
-      <data key="VT">VR</data>
-    </node>
-    <node id="n3">
       <data key="BA">0x40002000</data>
       <data key="BP">AXI_LITE_UART_BASEADDR</data>
       <data key="HA">0x40003FFF</data>
@@ -65,19 +42,42 @@
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
-    <node id="n4">
+    <node id="n2">
+      <data key="BA">0x40000000</data>
+      <data key="BP">AXI_LITE_GPIO_BASEADDR</data>
+      <data key="HA">0x40000FFF</data>
+      <data key="HP">AXI_LITE_GPIO_HIGHADDR</data>
+      <data key="MA">Data</data>
+      <data key="MX">/processing_system7_0</data>
+      <data key="MI">M_AXI_GP0</data>
+      <data key="MS">SEG_PmodGPS_0_Reg0</data>
+      <data key="MV">xilinx.com:ip:processing_system7:5.5</data>
+      <data key="TM">both</data>
+      <data key="SX">/PmodGPS_0</data>
+      <data key="SI">AXI_LITE_GPIO</data>
+      <data key="SS">Reg0</data>
+      <data key="SV">digilentinc.com:IP:PmodGPS:1.1</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n3">
       <data key="TU">active</data>
       <data key="VH">2</data>
       <data key="VT">PM</data>
     </node>
-    <edge id="e0" source="n0" target="n2">
+    <node id="n4">
+      <data key="VH">2</data>
+      <data key="VM">gps_design</data>
+      <data key="VT">VR</data>
+    </node>
+    <edge id="e0" source="n0" target="n4">
     </edge>
-    <edge id="e1" source="n2" target="n4">
+    <edge id="e1" source="n4" target="n3">
     </edge>
-    <edge id="e2" source="n1" target="n4">
+    <edge id="e2" source="n2" target="n3">
       <data key="EH">2</data>
     </edge>
-    <edge id="e3" source="n3" target="n4">
+    <edge id="e3" source="n1" target="n3">
       <data key="EH">2</data>
     </edge>
   </graph>

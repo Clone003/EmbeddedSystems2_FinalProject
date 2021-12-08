@@ -1,8 +1,8 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
---Date        : Wed Dec  8 16:46:59 2021
---Host        : YanniSpectre running 64-bit major release  (build 9200)
+--Date        : Wed Dec  8 17:16:50 2021
+--Host        : Aorus running 64-bit major release  (build 9200)
 --Command     : generate_target gps_design.bd
 --Design      : gps_design
 --Purpose     : IP block netlist
@@ -1096,7 +1096,31 @@ entity gps_design is
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    ja_pin10_i : in STD_LOGIC;
+    ja_pin10_o : out STD_LOGIC;
+    ja_pin10_t : out STD_LOGIC;
+    ja_pin1_i : in STD_LOGIC;
+    ja_pin1_o : out STD_LOGIC;
+    ja_pin1_t : out STD_LOGIC;
+    ja_pin2_i : in STD_LOGIC;
+    ja_pin2_o : out STD_LOGIC;
+    ja_pin2_t : out STD_LOGIC;
+    ja_pin3_i : in STD_LOGIC;
+    ja_pin3_o : out STD_LOGIC;
+    ja_pin3_t : out STD_LOGIC;
+    ja_pin4_i : in STD_LOGIC;
+    ja_pin4_o : out STD_LOGIC;
+    ja_pin4_t : out STD_LOGIC;
+    ja_pin7_i : in STD_LOGIC;
+    ja_pin7_o : out STD_LOGIC;
+    ja_pin7_t : out STD_LOGIC;
+    ja_pin8_i : in STD_LOGIC;
+    ja_pin8_o : out STD_LOGIC;
+    ja_pin8_t : out STD_LOGIC;
+    ja_pin9_i : in STD_LOGIC;
+    ja_pin9_o : out STD_LOGIC;
+    ja_pin9_t : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
   attribute CORE_GENERATION_INFO of gps_design : entity is "gps_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=gps_design,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=10,numReposBlks=6,numNonXlnxBlks=1,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
@@ -1260,6 +1284,30 @@ architecture STRUCTURE of gps_design is
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component gps_design_xlconcat_0_0;
+  signal PmodGPS_0_Pmod_out_PIN10_I : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN10_O : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN10_T : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN1_I : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN1_O : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN1_T : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN2_I : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN2_O : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN2_T : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN3_I : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN3_O : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN3_T : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN4_I : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN4_O : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN4_T : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN7_I : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN7_O : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN7_T : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN8_I : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN8_O : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN8_T : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN9_I : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN9_O : STD_LOGIC;
+  signal PmodGPS_0_Pmod_out_PIN9_T : STD_LOGIC;
   signal PmodGPS_0_gps_uart_interrupt : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -1358,22 +1406,6 @@ architecture STRUCTURE of gps_design is
   signal ps7_0_axi_periph_M01_AXI_WVALID : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_ps7_0_50M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_PmodGPS_0_Pmod_out_pin10_o_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin10_t_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin1_o_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin1_t_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin2_o_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin2_t_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin3_o_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin3_t_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin4_o_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin4_t_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin7_o_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin7_t_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin8_o_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin8_t_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin9_o_UNCONNECTED : STD_LOGIC;
-  signal NLW_PmodGPS_0_Pmod_out_pin9_t_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_rst_ps7_0_50M_mb_reset_UNCONNECTED : STD_LOGIC;
@@ -1397,6 +1429,30 @@ architecture STRUCTURE of gps_design is
   attribute X_INTERFACE_INFO of FIXED_IO_ps_clk : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK";
   attribute X_INTERFACE_INFO of FIXED_IO_ps_porb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
   attribute X_INTERFACE_INFO of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
+  attribute X_INTERFACE_INFO of ja_pin10_i : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin10_o : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin10_t : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin1_i : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin1_o : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin1_t : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin2_i : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin2_o : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin2_t : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin3_i : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin3_o : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin3_t : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin4_i : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin4_o : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin4_t : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin7_i : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin7_o : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin7_t : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin8_i : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin8_o : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin8_t : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin9_i : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin9_o : signal is "digilentinc.com:interface:pmod:1.0 ja ";
+  attribute X_INTERFACE_INFO of ja_pin9_t : signal is "digilentinc.com:interface:pmod:1.0 ja ";
   attribute X_INTERFACE_INFO of DDR_addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
   attribute X_INTERFACE_PARAMETER of DDR_addr : signal is "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250";
   attribute X_INTERFACE_INFO of DDR_ba : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
@@ -1406,6 +1462,30 @@ architecture STRUCTURE of gps_design is
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
 begin
+  PmodGPS_0_Pmod_out_PIN10_I <= ja_pin10_i;
+  PmodGPS_0_Pmod_out_PIN1_I <= ja_pin1_i;
+  PmodGPS_0_Pmod_out_PIN2_I <= ja_pin2_i;
+  PmodGPS_0_Pmod_out_PIN3_I <= ja_pin3_i;
+  PmodGPS_0_Pmod_out_PIN4_I <= ja_pin4_i;
+  PmodGPS_0_Pmod_out_PIN7_I <= ja_pin7_i;
+  PmodGPS_0_Pmod_out_PIN8_I <= ja_pin8_i;
+  PmodGPS_0_Pmod_out_PIN9_I <= ja_pin9_i;
+  ja_pin10_o <= PmodGPS_0_Pmod_out_PIN10_O;
+  ja_pin10_t <= PmodGPS_0_Pmod_out_PIN10_T;
+  ja_pin1_o <= PmodGPS_0_Pmod_out_PIN1_O;
+  ja_pin1_t <= PmodGPS_0_Pmod_out_PIN1_T;
+  ja_pin2_o <= PmodGPS_0_Pmod_out_PIN2_O;
+  ja_pin2_t <= PmodGPS_0_Pmod_out_PIN2_T;
+  ja_pin3_o <= PmodGPS_0_Pmod_out_PIN3_O;
+  ja_pin3_t <= PmodGPS_0_Pmod_out_PIN3_T;
+  ja_pin4_o <= PmodGPS_0_Pmod_out_PIN4_O;
+  ja_pin4_t <= PmodGPS_0_Pmod_out_PIN4_T;
+  ja_pin7_o <= PmodGPS_0_Pmod_out_PIN7_O;
+  ja_pin7_t <= PmodGPS_0_Pmod_out_PIN7_T;
+  ja_pin8_o <= PmodGPS_0_Pmod_out_PIN8_O;
+  ja_pin8_t <= PmodGPS_0_Pmod_out_PIN8_T;
+  ja_pin9_o <= PmodGPS_0_Pmod_out_PIN9_O;
+  ja_pin9_t <= PmodGPS_0_Pmod_out_PIN9_T;
 PmodGPS_0: component gps_design_PmodGPS_0_0
      port map (
       AXI_LITE_GPIO_araddr(8 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(8 downto 0),
@@ -1442,30 +1522,30 @@ PmodGPS_0: component gps_design_PmodGPS_0_0
       AXI_LITE_UART_wready => ps7_0_axi_periph_M01_AXI_WREADY,
       AXI_LITE_UART_wstrb(3 downto 0) => ps7_0_axi_periph_M01_AXI_WSTRB(3 downto 0),
       AXI_LITE_UART_wvalid => ps7_0_axi_periph_M01_AXI_WVALID(0),
-      Pmod_out_pin10_i => '0',
-      Pmod_out_pin10_o => NLW_PmodGPS_0_Pmod_out_pin10_o_UNCONNECTED,
-      Pmod_out_pin10_t => NLW_PmodGPS_0_Pmod_out_pin10_t_UNCONNECTED,
-      Pmod_out_pin1_i => '0',
-      Pmod_out_pin1_o => NLW_PmodGPS_0_Pmod_out_pin1_o_UNCONNECTED,
-      Pmod_out_pin1_t => NLW_PmodGPS_0_Pmod_out_pin1_t_UNCONNECTED,
-      Pmod_out_pin2_i => '0',
-      Pmod_out_pin2_o => NLW_PmodGPS_0_Pmod_out_pin2_o_UNCONNECTED,
-      Pmod_out_pin2_t => NLW_PmodGPS_0_Pmod_out_pin2_t_UNCONNECTED,
-      Pmod_out_pin3_i => '0',
-      Pmod_out_pin3_o => NLW_PmodGPS_0_Pmod_out_pin3_o_UNCONNECTED,
-      Pmod_out_pin3_t => NLW_PmodGPS_0_Pmod_out_pin3_t_UNCONNECTED,
-      Pmod_out_pin4_i => '0',
-      Pmod_out_pin4_o => NLW_PmodGPS_0_Pmod_out_pin4_o_UNCONNECTED,
-      Pmod_out_pin4_t => NLW_PmodGPS_0_Pmod_out_pin4_t_UNCONNECTED,
-      Pmod_out_pin7_i => '0',
-      Pmod_out_pin7_o => NLW_PmodGPS_0_Pmod_out_pin7_o_UNCONNECTED,
-      Pmod_out_pin7_t => NLW_PmodGPS_0_Pmod_out_pin7_t_UNCONNECTED,
-      Pmod_out_pin8_i => '0',
-      Pmod_out_pin8_o => NLW_PmodGPS_0_Pmod_out_pin8_o_UNCONNECTED,
-      Pmod_out_pin8_t => NLW_PmodGPS_0_Pmod_out_pin8_t_UNCONNECTED,
-      Pmod_out_pin9_i => '0',
-      Pmod_out_pin9_o => NLW_PmodGPS_0_Pmod_out_pin9_o_UNCONNECTED,
-      Pmod_out_pin9_t => NLW_PmodGPS_0_Pmod_out_pin9_t_UNCONNECTED,
+      Pmod_out_pin10_i => PmodGPS_0_Pmod_out_PIN10_I,
+      Pmod_out_pin10_o => PmodGPS_0_Pmod_out_PIN10_O,
+      Pmod_out_pin10_t => PmodGPS_0_Pmod_out_PIN10_T,
+      Pmod_out_pin1_i => PmodGPS_0_Pmod_out_PIN1_I,
+      Pmod_out_pin1_o => PmodGPS_0_Pmod_out_PIN1_O,
+      Pmod_out_pin1_t => PmodGPS_0_Pmod_out_PIN1_T,
+      Pmod_out_pin2_i => PmodGPS_0_Pmod_out_PIN2_I,
+      Pmod_out_pin2_o => PmodGPS_0_Pmod_out_PIN2_O,
+      Pmod_out_pin2_t => PmodGPS_0_Pmod_out_PIN2_T,
+      Pmod_out_pin3_i => PmodGPS_0_Pmod_out_PIN3_I,
+      Pmod_out_pin3_o => PmodGPS_0_Pmod_out_PIN3_O,
+      Pmod_out_pin3_t => PmodGPS_0_Pmod_out_PIN3_T,
+      Pmod_out_pin4_i => PmodGPS_0_Pmod_out_PIN4_I,
+      Pmod_out_pin4_o => PmodGPS_0_Pmod_out_PIN4_O,
+      Pmod_out_pin4_t => PmodGPS_0_Pmod_out_PIN4_T,
+      Pmod_out_pin7_i => PmodGPS_0_Pmod_out_PIN7_I,
+      Pmod_out_pin7_o => PmodGPS_0_Pmod_out_PIN7_O,
+      Pmod_out_pin7_t => PmodGPS_0_Pmod_out_PIN7_T,
+      Pmod_out_pin8_i => PmodGPS_0_Pmod_out_PIN8_I,
+      Pmod_out_pin8_o => PmodGPS_0_Pmod_out_PIN8_O,
+      Pmod_out_pin8_t => PmodGPS_0_Pmod_out_PIN8_T,
+      Pmod_out_pin9_i => PmodGPS_0_Pmod_out_PIN9_I,
+      Pmod_out_pin9_o => PmodGPS_0_Pmod_out_PIN9_O,
+      Pmod_out_pin9_t => PmodGPS_0_Pmod_out_PIN9_T,
       gps_uart_interrupt => PmodGPS_0_gps_uart_interrupt,
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_aresetn => rst_ps7_0_50M_peripheral_aresetn(0)

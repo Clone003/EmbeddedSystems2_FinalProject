@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCC6CFA533DC59CAD",
+      "boundary_crc": "0x46E1A49E261A3845",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../gps.gen/sources_1/bd/gps_design",
       "name": "gps_design",
@@ -90,6 +90,11 @@
             "value_src": "default"
           }
         }
+      },
+      "ja": {
+        "mode": "Master",
+        "vlnv_bus_definition": "digilentinc.com:interface:pmod:1.0",
+        "vlnv": "digilentinc.com:interface:pmod_rtl:1.0"
       }
     },
     "components": {
@@ -1238,6 +1243,14 @@
         "xci_name": "gps_design_PmodGPS_0_0",
         "xci_path": "ip\\gps_design_PmodGPS_0_0\\gps_design_PmodGPS_0_0.xci",
         "inst_hier_path": "PmodGPS_0",
+        "parameters": {
+          "PMOD": {
+            "value": "Custom"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        },
         "interface_ports": {
           "AXI_LITE_UART": {
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
@@ -1667,6 +1680,12 @@
       }
     },
     "interface_nets": {
+      "PmodGPS_0_Pmod_out": {
+        "interface_ports": [
+          "ja",
+          "PmodGPS_0/Pmod_out"
+        ]
+      },
       "processing_system7_0_DDR": {
         "interface_ports": [
           "DDR",
