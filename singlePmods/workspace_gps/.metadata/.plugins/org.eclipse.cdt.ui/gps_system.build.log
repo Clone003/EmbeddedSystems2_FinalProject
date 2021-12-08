@@ -1,0 +1,10 @@
+17:31:26 **** Build of configuration Debug for project gps_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 11953 C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/singlePmods/workspace_gps/gps_design_wrapper/export/gps_design_wrapper/gps_design_wrapper.xpfm standalone_ps7_cortexa9_0 C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/singlePmods/workspace_gps/gps_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/singlePmods/workspace_gps/gps_design_wrapper/export/gps_design_wrapper/gps_design_wrapper.xpfm --sys_config gps_design_wrapper --bif C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/singlePmods/workspace_gps/gps_system/Debug/system.bif --bitstream C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/singlePmods/workspace_gps/gps/_ide/bitstream/gps_design_wrapper.bit --elf C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/singlePmods/workspace_gps/gps/Debug/gps.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/singlePmods/workspace_gps/gps/_ide/bitstream/gps_design_wrapper.bit
+Running C:/Xilinx/Vitis/2021.1/bin/bootgen  -image C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/singlePmods/workspace_gps/gps_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+17:31:40 Build Finished (took 14s.370ms)
+
