@@ -6,25 +6,34 @@
 # Block Designs: bd/finalproject_design/finalproject_design.bd
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finalproject_design || ORIG_REF_NAME==finalproject_design} -quiet] -quiet
 
-# IP: bd/finalproject_design/ip/finalproject_design_processing_system7_0_0/finalproject_design_processing_system7_0_0.xci
+# IP: bd/finalproject_design/ip/finalproject_design_processing_system7_0_0_1/finalproject_design_processing_system7_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finalproject_design_processing_system7_0_0 || ORIG_REF_NAME==finalproject_design_processing_system7_0_0} -quiet] -quiet
 
-# IP: bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0/finalproject_design_PmodOLED_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finalproject_design_PmodOLED_0_0 || ORIG_REF_NAME==finalproject_design_PmodOLED_0_0} -quiet] -quiet
-
-# IP: bd/finalproject_design/ip/finalproject_design_xbar_0/finalproject_design_xbar_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finalproject_design_xbar_0 || ORIG_REF_NAME==finalproject_design_xbar_0} -quiet] -quiet
-
-# IP: bd/finalproject_design/ip/finalproject_design_ps7_0_axi_periph_0/finalproject_design_ps7_0_axi_periph_0.xci
+# IP: bd/finalproject_design/ip/finalproject_design_ps7_0_axi_periph_0_1/finalproject_design_ps7_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finalproject_design_ps7_0_axi_periph_0 || ORIG_REF_NAME==finalproject_design_ps7_0_axi_periph_0} -quiet] -quiet
 
-# IP: bd/finalproject_design/ip/finalproject_design_rst_ps7_0_50M_0/finalproject_design_rst_ps7_0_50M_0.xci
+# IP: bd/finalproject_design/ip/finalproject_design_xbar_0_1/finalproject_design_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finalproject_design_xbar_0 || ORIG_REF_NAME==finalproject_design_xbar_0} -quiet] -quiet
+
+# IP: bd/finalproject_design/ip/finalproject_design_rst_ps7_0_50M_0_1/finalproject_design_rst_ps7_0_50M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finalproject_design_rst_ps7_0_50M_0 || ORIG_REF_NAME==finalproject_design_rst_ps7_0_50M_0} -quiet] -quiet
 
-# IP: bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/finalproject_design_PmodBT2_0_0.xci
+# IP: bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0_1/finalproject_design_PmodOLED_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finalproject_design_PmodOLED_0_0 || ORIG_REF_NAME==finalproject_design_PmodOLED_0_0} -quiet] -quiet
+
+# IP: bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/finalproject_design_PmodBT2_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finalproject_design_PmodBT2_0_0 || ORIG_REF_NAME==finalproject_design_PmodBT2_0_0} -quiet] -quiet
 
-# IP: bd/finalproject_design/ip/finalproject_design_auto_pc_0/finalproject_design_auto_pc_0.xci
+# IP: bd/finalproject_design/ip/finalproject_design_PmodHYGRO_0_0/finalproject_design_PmodHYGRO_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finalproject_design_PmodHYGRO_0_0 || ORIG_REF_NAME==finalproject_design_PmodHYGRO_0_0} -quiet] -quiet
+
+# IP: bd/finalproject_design/ip/finalproject_design_PmodGPS_0_0/finalproject_design_PmodGPS_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finalproject_design_PmodGPS_0_0 || ORIG_REF_NAME==finalproject_design_PmodGPS_0_0} -quiet] -quiet
+
+# IP: bd/finalproject_design/ip/finalproject_design_xlconcat_0_0/finalproject_design_xlconcat_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finalproject_design_xlconcat_0_0 || ORIG_REF_NAME==finalproject_design_xlconcat_0_0} -quiet] -quiet
+
+# IP: bd/finalproject_design/ip/finalproject_design_auto_pc_0_1/finalproject_design_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finalproject_design_auto_pc_0 || ORIG_REF_NAME==finalproject_design_auto_pc_0} -quiet] -quiet
 
-# XDC: c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/finalproject_design_ooc.xdc
+# XDC: /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/finalproject_design_ooc.xdc

@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Wed Dec  8 19:00:18 2021
-| Host         : YanniSpectre running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date         : Tue Dec 14 17:00:55 2021
+| Host         : ece31 running 64-bit Ubuntu 20.04.2 LTS
 | Command      : report_drc -file finalproject_design_wrapper_drc_routed.rpt -pb finalproject_design_wrapper_drc_routed.pb -rpx finalproject_design_wrapper_drc_routed.rpx
 | Design       : finalproject_design_wrapper
 | Device       : xc7z010clg400-1
@@ -24,11 +24,11 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 7
+             Violations found: 18
 +--------+----------+--------------------------+------------+
 | Rule   | Severity | Description              | Violations |
 +--------+----------+--------------------------+------------+
-| BUFC-1 | Warning  | Input Buffer Connections | 7          |
+| BUFC-1 | Warning  | Input Buffer Connections | 18         |
 +--------+----------+--------------------------+------------+
 
 2. REPORT DETAILS
@@ -60,10 +60,65 @@ Related violations: <none>
 
 BUFC-1#6 Warning
 Input Buffer Connections  
-Input buffer oled_pin1_iobuf/IBUF (in oled_pin1_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Input buffer gps_pin10_iobuf/IBUF (in gps_pin10_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
 Related violations: <none>
 
 BUFC-1#7 Warning
+Input Buffer Connections  
+Input buffer gps_pin2_iobuf/IBUF (in gps_pin2_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#8 Warning
+Input Buffer Connections  
+Input buffer gps_pin7_iobuf/IBUF (in gps_pin7_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#9 Warning
+Input Buffer Connections  
+Input buffer gps_pin8_iobuf/IBUF (in gps_pin8_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#10 Warning
+Input Buffer Connections  
+Input buffer gps_pin9_iobuf/IBUF (in gps_pin9_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#11 Warning
+Input Buffer Connections  
+Input buffer hygro_pin10_iobuf/IBUF (in hygro_pin10_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#12 Warning
+Input Buffer Connections  
+Input buffer hygro_pin1_iobuf/IBUF (in hygro_pin1_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#13 Warning
+Input Buffer Connections  
+Input buffer hygro_pin2_iobuf/IBUF (in hygro_pin2_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#14 Warning
+Input Buffer Connections  
+Input buffer hygro_pin7_iobuf/IBUF (in hygro_pin7_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#15 Warning
+Input Buffer Connections  
+Input buffer hygro_pin8_iobuf/IBUF (in hygro_pin8_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#16 Warning
+Input Buffer Connections  
+Input buffer hygro_pin9_iobuf/IBUF (in hygro_pin9_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#17 Warning
+Input Buffer Connections  
+Input buffer oled_pin1_iobuf/IBUF (in oled_pin1_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#18 Warning
 Input Buffer Connections  
 Input buffer oled_pin4_iobuf/IBUF (in oled_pin4_iobuf macro) has no loads. It is recommended to have an input buffer drive an internal load.
 Related violations: <none>

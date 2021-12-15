@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/impl_1/finalproject_design_wrapper.tcl"
+  variable script "/home/user/Desktop/finalproject/finalproject.runs/impl_1/finalproject_design_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -125,28 +125,30 @@ set rc [catch {
   set_param chipscope.maxJobs 2
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z010clg400-1
-  set_property board_part_repo_paths {C:/Users/johnr/AppData/Roaming/Xilinx/Vivado/2021.1/xhub/board_store/xilinx_board_store} [current_project]
   set_property board_part digilentinc.com:zybo-z7-10:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.cache/wt [current_project]
-  set_property parent.project_path C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.xpr [current_project]
-  set_property ip_repo_paths C:/Users/johnr/Projects/vivado-library [current_project]
+  set_property webtalk.parent_dir /home/user/Desktop/finalproject/finalproject.cache/wt [current_project]
+  set_property parent.project_path /home/user/Desktop/finalproject/finalproject.xpr [current_project]
+  set_property ip_repo_paths {
+  /home/user/vivado-library
+  /home/software/digilent
+} [current_project]
   update_ip_catalog
-  set_property ip_output_repo C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.cache/ip [current_project]
+  set_property ip_output_repo /home/user/Desktop/finalproject/finalproject.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/synth_1/finalproject_design_wrapper.dcp
+  add_files -quiet /home/user/Desktop/finalproject/finalproject.runs/synth_1/finalproject_design_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.srcs/sources_1/bd/finalproject_design/finalproject_design.bd
+  add_files /home/user/Desktop/finalproject/finalproject.srcs/sources_1/bd/finalproject_design/finalproject_design.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.srcs/constrs_1/imports/EmbeddedSystems2/Z7_7010_7020.xdc
+  read_xdc /home/user/Desktop/finalproject/finalproject.srcs/constrs_1/imports/EmbeddedSystems2/Z7_7010_7020.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

@@ -162,6 +162,10 @@ proc create_root_design { parentCell } {
 
   set bt2 [ create_bd_intf_port -mode Master -vlnv digilentinc.com:interface:pmod_rtl:1.0 bt2 ]
 
+  set gps [ create_bd_intf_port -mode Master -vlnv digilentinc.com:interface:pmod_rtl:1.0 gps ]
+
+  set hygro [ create_bd_intf_port -mode Master -vlnv digilentinc.com:interface:pmod_rtl:1.0 hygro ]
+
   set oled [ create_bd_intf_port -mode Master -vlnv digilentinc.com:interface:pmod_rtl:1.0 oled ]
 
 
@@ -173,6 +177,12 @@ proc create_root_design { parentCell } {
    CONFIG.PMOD {Custom} \
    CONFIG.USE_BOARD_FLOW {true} \
  ] $PmodBT2_0
+
+  # Create instance: PmodGPS_0, and set properties
+  set PmodGPS_0 [ create_bd_cell -type ip -vlnv digilentinc.com:IP:PmodGPS:1.1 PmodGPS_0 ]
+
+  # Create instance: PmodHYGRO_0, and set properties
+  set PmodHYGRO_0 [ create_bd_cell -type ip -vlnv digilentinc.com:IP:PmodHYGRO:1.0 PmodHYGRO_0 ]
 
   # Create instance: PmodOLED_0, and set properties
   set PmodOLED_0 [ create_bd_cell -type ip -vlnv digilentinc.com:IP:PmodOLED:1.0 PmodOLED_0 ]
@@ -285,6 +295,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_I2C_RESET_ENABLE {1} \
    CONFIG.PCW_IOPLL_CTRL_FBDIV {30} \
    CONFIG.PCW_IO_IO_PLL_FREQMHZ {1000.000} \
+   CONFIG.PCW_IRQ_F2P_INTR {1} \
    CONFIG.PCW_IRQ_F2P_MODE {DIRECT} \
    CONFIG.PCW_MIO_0_DIRECTION {inout} \
    CONFIG.PCW_MIO_0_IOTYPE {LVCMOS 3.3V} \
@@ -559,11 +570,9 @@ Reset#SD 0#UART 1#UART 1#GPIO#GPIO#Enet 0#Enet 0}\
    CONFIG.PCW_SINGLE_QSPI_DATA_MODE {x4} \
    CONFIG.PCW_SMC_PERIPHERAL_CLKSRC {IO PLL} \
    CONFIG.PCW_SMC_PERIPHERAL_DIVISOR0 {1} \
-   CONFIG.PCW_SMC_PERIPHERAL_FREQMHZ {100} \
    CONFIG.PCW_SPI_PERIPHERAL_DIVISOR0 {1} \
    CONFIG.PCW_TPIU_PERIPHERAL_CLKSRC {External} \
    CONFIG.PCW_TPIU_PERIPHERAL_DIVISOR0 {1} \
-   CONFIG.PCW_TPIU_PERIPHERAL_FREQMHZ {200} \
    CONFIG.PCW_UART1_BAUD_RATE {115200} \
    CONFIG.PCW_UART1_GRP_FULL_ENABLE {0} \
    CONFIG.PCW_UART1_PERIPHERAL_ENABLE {1} \
@@ -656,20 +665,29 @@ Reset#SD 0#UART 1#UART 1#GPIO#GPIO#Enet 0#Enet 0}\
    CONFIG.PCW_USB_RESET_SELECT {Share reset pin} \
    CONFIG.PCW_USE_AXI_NONSECURE {0} \
    CONFIG.PCW_USE_CROSS_TRIGGER {0} \
+   CONFIG.PCW_USE_FABRIC_INTERRUPT {1} \
    CONFIG.PCW_USE_M_AXI_GP0 {1} \
  ] $processing_system7_0
 
   # Create instance: ps7_0_axi_periph, and set properties
   set ps7_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 ps7_0_axi_periph ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {4} \
+   CONFIG.NUM_MI {8} \
  ] $ps7_0_axi_periph
 
   # Create instance: rst_ps7_0_50M, and set properties
   set rst_ps7_0_50M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_ps7_0_50M ]
 
+  # Create instance: xlconcat_0, and set properties
+  set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
+  set_property -dict [ list \
+   CONFIG.NUM_PORTS {1} \
+ ] $xlconcat_0
+
   # Create interface connections
   connect_bd_intf_net -intf_net PmodBT2_0_Pmod_out [get_bd_intf_ports bt2] [get_bd_intf_pins PmodBT2_0/Pmod_out]
+  connect_bd_intf_net -intf_net PmodGPS_0_Pmod_out [get_bd_intf_ports gps] [get_bd_intf_pins PmodGPS_0/Pmod_out]
+  connect_bd_intf_net -intf_net PmodHYGRO_0_Pmod_out [get_bd_intf_ports hygro] [get_bd_intf_pins PmodHYGRO_0/Pmod_out]
   connect_bd_intf_net -intf_net PmodOLED_0_Pmod_out [get_bd_intf_ports oled] [get_bd_intf_pins PmodOLED_0/Pmod_out]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
@@ -678,15 +696,25 @@ Reset#SD 0#UART 1#UART 1#GPIO#GPIO#Enet 0#Enet 0}\
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M01_AXI [get_bd_intf_pins PmodOLED_0/AXI_LITE_SPI] [get_bd_intf_pins ps7_0_axi_periph/M01_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M02_AXI [get_bd_intf_pins PmodBT2_0/AXI_LITE_GPIO] [get_bd_intf_pins ps7_0_axi_periph/M02_AXI]
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M03_AXI [get_bd_intf_pins PmodBT2_0/AXI_LITE_UART] [get_bd_intf_pins ps7_0_axi_periph/M03_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M04_AXI [get_bd_intf_pins PmodHYGRO_0/AXI_LITE_IIC] [get_bd_intf_pins ps7_0_axi_periph/M04_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M05_AXI [get_bd_intf_pins PmodHYGRO_0/AXI_LITE_TMR] [get_bd_intf_pins ps7_0_axi_periph/M05_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M06_AXI [get_bd_intf_pins PmodGPS_0/AXI_LITE_GPIO] [get_bd_intf_pins ps7_0_axi_periph/M06_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M07_AXI [get_bd_intf_pins PmodGPS_0/AXI_LITE_UART] [get_bd_intf_pins ps7_0_axi_periph/M07_AXI]
 
   # Create port connections
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins PmodBT2_0/s_axi_aclk] [get_bd_pins PmodOLED_0/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
+  connect_bd_net -net PmodGPS_0_gps_uart_interrupt [get_bd_pins PmodGPS_0/gps_uart_interrupt] [get_bd_pins xlconcat_0/In0]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins PmodBT2_0/s_axi_aclk] [get_bd_pins PmodGPS_0/s_axi_aclk] [get_bd_pins PmodHYGRO_0/s_axi_aclk] [get_bd_pins PmodOLED_0/s_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/M02_ACLK] [get_bd_pins ps7_0_axi_periph/M03_ACLK] [get_bd_pins ps7_0_axi_periph/M04_ACLK] [get_bd_pins ps7_0_axi_periph/M05_ACLK] [get_bd_pins ps7_0_axi_periph/M06_ACLK] [get_bd_pins ps7_0_axi_periph/M07_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_50M/ext_reset_in]
-  connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins PmodBT2_0/s_axi_aresetn] [get_bd_pins PmodOLED_0/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
+  connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins PmodBT2_0/s_axi_aresetn] [get_bd_pins PmodGPS_0/s_axi_aresetn] [get_bd_pins PmodHYGRO_0/s_axi_aresetn] [get_bd_pins PmodOLED_0/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/M05_ARESETN] [get_bd_pins ps7_0_axi_periph/M06_ARESETN] [get_bd_pins ps7_0_axi_periph/M07_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
+  connect_bd_net -net xlconcat_0_dout [get_bd_pins processing_system7_0/IRQ_F2P] [get_bd_pins xlconcat_0/dout]
 
   # Create address segments
   assign_bd_address -offset 0x40001000 -range 0x00001000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs PmodBT2_0/AXI_LITE_GPIO/Reg0] -force
   assign_bd_address -offset 0x40002000 -range 0x00002000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs PmodBT2_0/AXI_LITE_UART/Reg0] -force
+  assign_bd_address -offset 0x40004000 -range 0x00001000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs PmodGPS_0/AXI_LITE_GPIO/Reg0] -force
+  assign_bd_address -offset 0x40006000 -range 0x00002000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs PmodGPS_0/AXI_LITE_UART/Reg0] -force
+  assign_bd_address -offset 0x43C00000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs PmodHYGRO_0/AXI_LITE_IIC/Reg0] -force
+  assign_bd_address -offset 0x43C10000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs PmodHYGRO_0/AXI_LITE_TMR/Reg0] -force
   assign_bd_address -offset 0x40000000 -range 0x00001000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs PmodOLED_0/AXI_LITE_GPIO/Reg0] -force
   assign_bd_address -offset 0x40010000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs PmodOLED_0/AXI_LITE_SPI/Reg0] -force
 

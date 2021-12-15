@@ -21,9 +21,22 @@
   <key attr.name="vert_type" attr.type="string" for="node" id="VT"/>
   <graph edgedefault="undirected" id="G" parse.edgeids="canonical" parse.nodeids="canonical" parse.order="nodesfirst">
     <node id="n0">
-      <data key="TU">active</data>
-      <data key="VH">2</data>
-      <data key="VT">PM</data>
+      <data key="BA">0x40002000</data>
+      <data key="BP">AXI_LITE_UART_BASEADDR</data>
+      <data key="HA">0x40003FFF</data>
+      <data key="HP">AXI_LITE_UART_HIGHADDR</data>
+      <data key="MA">Data</data>
+      <data key="MX">/processing_system7_0</data>
+      <data key="MI">M_AXI_GP0</data>
+      <data key="MS">SEG_PmodBT2_0_Reg0_1</data>
+      <data key="MV">xilinx.com:ip:processing_system7:5.5</data>
+      <data key="TM">both</data>
+      <data key="SX">/PmodBT2_0</data>
+      <data key="SI">AXI_LITE_UART</data>
+      <data key="SS">Reg0</data>
+      <data key="SV">digilentinc.com:IP:PmodBT2:1.0</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
     </node>
     <node id="n1">
       <data key="BA">0x40001000</data>
@@ -44,24 +57,92 @@
       <data key="VT">AC</data>
     </node>
     <node id="n2">
-      <data key="BA">0x40002000</data>
-      <data key="BP">AXI_LITE_UART_BASEADDR</data>
-      <data key="HA">0x40003FFF</data>
-      <data key="HP">AXI_LITE_UART_HIGHADDR</data>
+      <data key="BA">0x43C00000</data>
+      <data key="BP">AXI_LITE_IIC_BASEADDR</data>
+      <data key="HA">0x43C0FFFF</data>
+      <data key="HP">AXI_LITE_IIC_HIGHADDR</data>
       <data key="MA">Data</data>
       <data key="MX">/processing_system7_0</data>
       <data key="MI">M_AXI_GP0</data>
-      <data key="MS">SEG_PmodBT2_0_Reg0_1</data>
+      <data key="MS">SEG_PmodHYGRO_0_Reg0</data>
       <data key="MV">xilinx.com:ip:processing_system7:5.5</data>
       <data key="TM">both</data>
-      <data key="SX">/PmodBT2_0</data>
-      <data key="SI">AXI_LITE_UART</data>
+      <data key="SX">/PmodHYGRO_0</data>
+      <data key="SI">AXI_LITE_IIC</data>
       <data key="SS">Reg0</data>
-      <data key="SV">digilentinc.com:IP:PmodBT2:1.0</data>
+      <data key="SV">digilentinc.com:IP:PmodHYGRO:1.0</data>
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
     <node id="n3">
+      <data key="TU">active</data>
+      <data key="VH">2</data>
+      <data key="VT">PM</data>
+    </node>
+    <node id="n4">
+      <data key="VH">2</data>
+      <data key="VM">finalproject_design</data>
+      <data key="VT">VR</data>
+    </node>
+    <node id="n5">
+      <data key="BA">0x43C10000</data>
+      <data key="BP">AXI_LITE_TMR_BASEADDR</data>
+      <data key="HA">0x43C1FFFF</data>
+      <data key="HP">AXI_LITE_TMR_HIGHADDR</data>
+      <data key="MA">Data</data>
+      <data key="MX">/processing_system7_0</data>
+      <data key="MI">M_AXI_GP0</data>
+      <data key="MS">SEG_PmodHYGRO_0_Reg0_1</data>
+      <data key="MV">xilinx.com:ip:processing_system7:5.5</data>
+      <data key="TM">both</data>
+      <data key="SX">/PmodHYGRO_0</data>
+      <data key="SI">AXI_LITE_TMR</data>
+      <data key="SS">Reg0</data>
+      <data key="SV">digilentinc.com:IP:PmodHYGRO:1.0</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n6">
+      <data key="VM">finalproject_design</data>
+      <data key="VT">BC</data>
+    </node>
+    <node id="n7">
+      <data key="BA">0x40006000</data>
+      <data key="BP">AXI_LITE_UART_BASEADDR</data>
+      <data key="HA">0x40007FFF</data>
+      <data key="HP">AXI_LITE_UART_HIGHADDR</data>
+      <data key="MA">Data</data>
+      <data key="MX">/processing_system7_0</data>
+      <data key="MI">M_AXI_GP0</data>
+      <data key="MS">SEG_PmodGPS_0_Reg0_1</data>
+      <data key="MV">xilinx.com:ip:processing_system7:5.5</data>
+      <data key="TM">both</data>
+      <data key="SX">/PmodGPS_0</data>
+      <data key="SI">AXI_LITE_UART</data>
+      <data key="SS">Reg0</data>
+      <data key="SV">digilentinc.com:IP:PmodGPS:1.1</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n8">
+      <data key="BA">0x40004000</data>
+      <data key="BP">AXI_LITE_GPIO_BASEADDR</data>
+      <data key="HA">0x40004FFF</data>
+      <data key="HP">AXI_LITE_GPIO_HIGHADDR</data>
+      <data key="MA">Data</data>
+      <data key="MX">/processing_system7_0</data>
+      <data key="MI">M_AXI_GP0</data>
+      <data key="MS">SEG_PmodGPS_0_Reg0</data>
+      <data key="MV">xilinx.com:ip:processing_system7:5.5</data>
+      <data key="TM">both</data>
+      <data key="SX">/PmodGPS_0</data>
+      <data key="SI">AXI_LITE_GPIO</data>
+      <data key="SS">Reg0</data>
+      <data key="SV">digilentinc.com:IP:PmodGPS:1.1</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n9">
       <data key="BA">0x40010000</data>
       <data key="BP">AXI_LITE_SPI_BASEADDR</data>
       <data key="HA">0x4001FFFF</data>
@@ -79,11 +160,7 @@
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
-    <node id="n4">
-      <data key="VM">finalproject_design</data>
-      <data key="VT">BC</data>
-    </node>
-    <node id="n5">
+    <node id="n10">
       <data key="BA">0x40000000</data>
       <data key="BP">AXI_LITE_GPIO_BASEADDR</data>
       <data key="HA">0x40000FFF</data>
@@ -101,25 +178,32 @@
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
-    <node id="n6">
-      <data key="VH">2</data>
-      <data key="VM">finalproject_design</data>
-      <data key="VT">VR</data>
-    </node>
-    <edge id="e0" source="n4" target="n6">
+    <edge id="e0" source="n6" target="n4">
     </edge>
-    <edge id="e1" source="n6" target="n0">
+    <edge id="e1" source="n4" target="n3">
     </edge>
-    <edge id="e2" source="n5" target="n0">
+    <edge id="e2" source="n10" target="n3">
       <data key="EH">2</data>
     </edge>
-    <edge id="e3" source="n3" target="n0">
+    <edge id="e3" source="n9" target="n3">
       <data key="EH">2</data>
     </edge>
-    <edge id="e4" source="n1" target="n0">
+    <edge id="e4" source="n1" target="n3">
       <data key="EH">2</data>
     </edge>
-    <edge id="e5" source="n2" target="n0">
+    <edge id="e5" source="n0" target="n3">
+      <data key="EH">2</data>
+    </edge>
+    <edge id="e6" source="n2" target="n3">
+      <data key="EH">2</data>
+    </edge>
+    <edge id="e7" source="n5" target="n3">
+      <data key="EH">2</data>
+    </edge>
+    <edge id="e8" source="n8" target="n3">
+      <data key="EH">2</data>
+    </edge>
+    <edge id="e9" source="n7" target="n3">
       <data key="EH">2</data>
     </edge>
   </graph>

@@ -1,8 +1,8 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date             : Wed Dec  8 19:00:21 2021
-| Host             : YanniSpectre running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2021.1 (lin64) Build 3247384 Thu Jun 10 19:36:07 MDT 2021
+| Date             : Tue Dec 14 17:00:56 2021
+| Host             : ece31 running 64-bit Ubuntu 20.04.2 LTS
 | Command          : report_power -file finalproject_design_wrapper_power_routed.rpt -pb finalproject_design_wrapper_power_summary_routed.pb -rpx finalproject_design_wrapper_power_routed.rpx
 | Design           : finalproject_design_wrapper
 | Device           : xc7z010clg400-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.527        |
+| Total On-Chip Power (W)  | 1.532        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.407        |
+| Dynamic (W)              | 1.411        |
 | Device Static (W)        | 0.120        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 67.4         |
-| Junction Temperature (C) | 42.6         |
+| Max Ambient (C)          | 67.3         |
+| Junction Temperature (C) | 42.7         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,19 +52,20 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.004 |        3 |       --- |             --- |
-| Slice Logic              |     0.001 |     3775 |       --- |             --- |
-|   LUT as Logic           |     0.001 |     1257 |     17600 |            7.14 |
-|   Register               |    <0.001 |     1705 |     35200 |            4.84 |
-|   CARRY4                 |    <0.001 |       22 |      4400 |            0.50 |
+| Clocks                   |     0.006 |        3 |       --- |             --- |
+| Slice Logic              |     0.002 |     6151 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     2297 |     17600 |           13.05 |
+|   Register               |    <0.001 |     2615 |     35200 |            7.43 |
+|   CARRY4                 |    <0.001 |       79 |      4400 |            1.80 |
 |   LUT as Distributed RAM |    <0.001 |       12 |      6000 |            0.20 |
-|   LUT as Shift Register  |    <0.001 |       74 |      6000 |            1.23 |
-|   Others                 |     0.000 |      334 |       --- |             --- |
-| Signals                  |     0.001 |     2694 |       --- |             --- |
-| I/O                      |     0.002 |       16 |       100 |           16.00 |
+|   LUT as Shift Register  |    <0.001 |       96 |      6000 |            1.60 |
+|   F7/F8 Muxes            |    <0.001 |       12 |     17600 |            0.07 |
+|   Others                 |     0.000 |      437 |       --- |             --- |
+| Signals                  |     0.002 |     4312 |       --- |             --- |
+| I/O                      |     0.002 |       32 |       100 |           32.00 |
 | PS7                      |     1.399 |        1 |       --- |             --- |
 | Static Power             |     0.120 |          |           |                 |
-| Total                    |     1.527 |          |           |                 |
+| Total                    |     1.532 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,9 +75,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.013 |       0.006 |      0.007 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.016 |       0.010 |      0.007 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.008 |       0.000 |      0.008 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -150,15 +151,19 @@ Table of Contents
 +-----------------------------+-----------+
 | Name                        | Power (W) |
 +-----------------------------+-----------+
-| finalproject_design_wrapper |     1.407 |
-|   finalproject_design_i     |     1.405 |
+| finalproject_design_wrapper |     1.411 |
+|   finalproject_design_i     |     1.409 |
 |     PmodBT2_0               |     0.001 |
 |       inst                  |     0.001 |
+|     PmodGPS_0               |     0.001 |
+|       inst                  |     0.001 |
+|     PmodHYGRO_0             |     0.002 |
+|       inst                  |     0.002 |
 |     PmodOLED_0              |     0.002 |
 |       inst                  |     0.002 |
 |     processing_system7_0    |     1.399 |
 |       inst                  |     1.399 |
-|     ps7_0_axi_periph        |     0.002 |
+|     ps7_0_axi_periph        |     0.003 |
 |       s00_couplers          |     0.002 |
 +-----------------------------+-----------+
 

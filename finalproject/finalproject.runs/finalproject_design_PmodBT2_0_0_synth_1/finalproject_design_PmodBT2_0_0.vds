@@ -1,34 +1,34 @@
 #-----------------------------------------------------------
 # Vivado v2021.1 (64-bit)
-# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Wed Dec  8 18:51:57 2021
-# Process ID: 15736
-# Current directory: C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1
-# Command line: vivado.exe -log finalproject_design_PmodBT2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finalproject_design_PmodBT2_0_0.tcl
-# Log file: C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/finalproject_design_PmodBT2_0_0.vds
-# Journal file: C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1\vivado.jou
+# Start of session at: Tue Dec 14 16:44:47 2021
+# Process ID: 1420605
+# Current directory: /home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1
+# Command line: vivado -log finalproject_design_PmodBT2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finalproject_design_PmodBT2_0_0.tcl
+# Log file: /home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/finalproject_design_PmodBT2_0_0.vds
+# Journal file: /home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source finalproject_design_PmodBT2_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/johnr/Projects/vivado-library'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
-WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.cache/ip 
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/user/vivado-library'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/software/digilent'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/Xilinx/Vivado/2021.1/data/ip'.
 Command: synth_design -top finalproject_design_PmodBT2_0_0 -part xc7z010clg400-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 15996
+INFO: [Synth 8-7075] Helper process launched with PID 1421083
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1125.648 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 2460.195 ; gain = 0.000 ; free physical = 139 ; free virtual = 16839
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'finalproject_design_PmodBT2_0_0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/synth/finalproject_design_PmodBT2_0_0.v:56]
-INFO: [Synth 8-6157] synthesizing module 'PmodBT2' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:12]
-INFO: [Synth 8-638] synthesizing module 'PmodBT2_axi_gpio_0_0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/synth/PmodBT2_axi_gpio_0_0.vhd:86]
+INFO: [Synth 8-6157] synthesizing module 'finalproject_design_PmodBT2_0_0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/synth/finalproject_design_PmodBT2_0_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'PmodBT2' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:12]
+INFO: [Synth 8-638] synthesizing module 'PmodBT2_axi_gpio_0_0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/synth/PmodBT2_axi_gpio_0_0.vhd:86]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -44,55 +44,55 @@ INFO: [Synth 8-638] synthesizing module 'PmodBT2_axi_gpio_0_0' [c:/Users/johnr/P
 	Parameter C_IS_DUAL bound to: 0 - type: integer 
 	Parameter C_DOUT_DEFAULT_2 bound to: 32'b00000000000000000000000000000000 
 	Parameter C_TRI_DEFAULT_2 bound to: 32'b11111111111111111111111111111111 
-INFO: [Synth 8-3491] module 'axi_gpio' declared at 'c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/synth/PmodBT2_axi_gpio_0_0.vhd:172]
-INFO: [Synth 8-638] synthesizing module 'axi_gpio' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
-INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-226] default block is never used [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
-INFO: [Synth 8-226] default block is never used [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:443]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-3491] module 'axi_gpio' declared at '/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1265' bound to instance 'U0' of component 'axi_gpio' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/synth/PmodBT2_axi_gpio_0_0.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-226] default block is never used [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:443]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:736]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d2' to cell 'FDR' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:772]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d3' to cell 'FDR' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:788]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d4' to cell 'FDR' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:804]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d5' to cell 'FDR' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:821]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
-INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
-INFO: [Synth 8-256] done synthesizing module 'PmodBT2_axi_gpio_0_0' (8#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/synth/PmodBT2_axi_gpio_0_0.vhd:86]
-INFO: [Synth 8-638] synthesizing module 'PmodBT2_axi_uart16550_0_0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/synth/PmodBT2_axi_uart16550_0_0.vhd:99]
+INFO: [Synth 8-113] binding component instance 'CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6' to cell 'FDR' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:837]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_gpio_v2_0_vh_rfs.vhd:1351]
+INFO: [Synth 8-256] done synthesizing module 'PmodBT2_axi_gpio_0_0' (8#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/synth/PmodBT2_axi_gpio_0_0.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'PmodBT2_axi_uart16550_0_0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/synth/PmodBT2_axi_uart16550_0_0.vhd:99]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_SIM_DEVICE bound to: VERSAL_AI_CORE_ES1 - type: string 
 	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
@@ -102,131 +102,131 @@ INFO: [Synth 8-638] synthesizing module 'PmodBT2_axi_uart16550_0_0' [c:/Users/jo
 	Parameter C_HAS_EXTERNAL_XIN bound to: 0 - type: integer 
 	Parameter C_HAS_EXTERNAL_RCLK bound to: 0 - type: integer 
 	Parameter C_EXTERNAL_XIN_CLK_HZ bound to: 25000000 - type: integer 
-INFO: [Synth 8-3491] module 'axi_uart16550' declared at 'c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4662' bound to instance 'U0' of component 'axi_uart16550' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/synth/PmodBT2_axi_uart16550_0_0.vhd:204]
-INFO: [Synth 8-638] synthesizing module 'axi_uart16550' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4737]
-INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif__parameterized0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'slave_attachment__parameterized0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-638] synthesizing module 'address_decoder__parameterized0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder__parameterized0' (8#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-226] default block is never used [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment__parameterized0' (8#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif__parameterized0' (8#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'xuart' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4264]
-INFO: [Synth 8-638] synthesizing module 'uart16550' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2318]
-INFO: [Synth 8-638] synthesizing module 'xuart_tx_load_sm' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:310]
-INFO: [Synth 8-226] default block is never used [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:364]
-INFO: [Synth 8-256] done synthesizing module 'xuart_tx_load_sm' (9#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:310]
-INFO: [Synth 8-113] binding component instance 'BAUD_FF' to cell 'ODDR' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3364]
-INFO: [Synth 8-638] synthesizing module 'rx16550' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1303]
-INFO: [Synth 8-226] default block is never used [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1760]
-INFO: [Synth 8-256] done synthesizing module 'rx16550' (10#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1303]
-INFO: [Synth 8-638] synthesizing module 'tx16550' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:681]
-INFO: [Synth 8-256] done synthesizing module 'tx16550' (11#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:681]
-INFO: [Synth 8-638] synthesizing module 'tx_fifo_block' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:542]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
-INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (12#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (13#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (14#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'tx_fifo_block' (15#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:542]
-INFO: [Synth 8-638] synthesizing module 'rx_fifo_block' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1129]
-INFO: [Synth 8-638] synthesizing module 'rx_fifo_control' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:104]
-INFO: [Synth 8-226] default block is never used [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:130]
-INFO: [Synth 8-256] done synthesizing module 'rx_fifo_control' (16#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:104]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (16#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (16#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'rx_fifo_block' (17#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1129]
-INFO: [Synth 8-256] done synthesizing module 'uart16550' (18#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2318]
-INFO: [Synth 8-638] synthesizing module 'ipic_if' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3939]
-INFO: [Synth 8-256] done synthesizing module 'ipic_if' (19#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3939]
-INFO: [Synth 8-256] done synthesizing module 'xuart' (20#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4264]
-INFO: [Synth 8-256] done synthesizing module 'axi_uart16550' (21#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4737]
-INFO: [Synth 8-256] done synthesizing module 'PmodBT2_axi_uart16550_0_0' (22#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/synth/PmodBT2_axi_uart16550_0_0.vhd:99]
-WARNING: [Synth 8-7071] port 'baudoutn' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
-WARNING: [Synth 8-7071] port 'ddis' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
-WARNING: [Synth 8-7071] port 'dtrn' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
-WARNING: [Synth 8-7071] port 'out1n' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
-WARNING: [Synth 8-7071] port 'out2n' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
-WARNING: [Synth 8-7071] port 'rtsn' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
-WARNING: [Synth 8-7071] port 'rxrdyn' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
-WARNING: [Synth 8-7071] port 'txrdyn' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
-WARNING: [Synth 8-7023] instance 'axi_uart16550_0' of module 'PmodBT2_axi_uart16550_0_0' has 35 connections declared, but only 27 given [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
-INFO: [Synth 8-6157] synthesizing module 'PmodBT2_pmod_bridge_0_0' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_pmod_bridge_0_0/synth/PmodBT2_pmod_bridge_0_0.v:56]
-INFO: [Synth 8-6157] synthesizing module 'pmod_concat' [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_pmod_bridge_0_0/src/pmod_concat.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'pmod_concat' (23#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_pmod_bridge_0_0/src/pmod_concat.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'PmodBT2_pmod_bridge_0_0' (24#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_pmod_bridge_0_0/synth/PmodBT2_pmod_bridge_0_0.v:56]
-INFO: [Synth 8-6155] done synthesizing module 'PmodBT2' (25#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'finalproject_design_PmodBT2_0_0' (26#1) [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/synth/finalproject_design_PmodBT2_0_0.v:56]
+INFO: [Synth 8-3491] module 'axi_uart16550' declared at '/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4662' bound to instance 'U0' of component 'axi_uart16550' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/synth/PmodBT2_axi_uart16550_0_0.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'axi_uart16550' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4737]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif__parameterized0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment__parameterized0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder__parameterized0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder__parameterized0' (8#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment__parameterized0' (8#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif__parameterized0' (8#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'xuart' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-638] synthesizing module 'uart16550' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2318]
+INFO: [Synth 8-638] synthesizing module 'xuart_tx_load_sm' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:310]
+INFO: [Synth 8-226] default block is never used [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:364]
+INFO: [Synth 8-256] done synthesizing module 'xuart_tx_load_sm' (9#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:310]
+INFO: [Synth 8-113] binding component instance 'BAUD_FF' to cell 'ODDR' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3364]
+INFO: [Synth 8-638] synthesizing module 'rx16550' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1303]
+INFO: [Synth 8-226] default block is never used [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1760]
+INFO: [Synth 8-256] done synthesizing module 'rx16550' (10#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1303]
+INFO: [Synth 8-638] synthesizing module 'tx16550' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:681]
+INFO: [Synth 8-256] done synthesizing module 'tx16550' (11#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:681]
+INFO: [Synth 8-638] synthesizing module 'tx_fifo_block' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:542]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (12#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (13#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (14#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'tx_fifo_block' (15#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:542]
+INFO: [Synth 8-638] synthesizing module 'rx_fifo_block' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1129]
+INFO: [Synth 8-638] synthesizing module 'rx_fifo_control' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:104]
+INFO: [Synth 8-226] default block is never used [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'rx_fifo_control' (16#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (16#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (16#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'rx_fifo_block' (17#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:1129]
+INFO: [Synth 8-256] done synthesizing module 'uart16550' (18#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:2318]
+INFO: [Synth 8-638] synthesizing module 'ipic_if' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3939]
+INFO: [Synth 8-256] done synthesizing module 'ipic_if' (19#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:3939]
+INFO: [Synth 8-256] done synthesizing module 'xuart' (20#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4264]
+INFO: [Synth 8-256] done synthesizing module 'axi_uart16550' (21#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/hdl/axi_uart16550_v2_0_vh_rfs.vhd:4737]
+INFO: [Synth 8-256] done synthesizing module 'PmodBT2_axi_uart16550_0_0' (22#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/synth/PmodBT2_axi_uart16550_0_0.vhd:99]
+WARNING: [Synth 8-7071] port 'baudoutn' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
+WARNING: [Synth 8-7071] port 'ddis' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
+WARNING: [Synth 8-7071] port 'dtrn' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
+WARNING: [Synth 8-7071] port 'out1n' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
+WARNING: [Synth 8-7071] port 'out2n' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
+WARNING: [Synth 8-7071] port 'rtsn' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
+WARNING: [Synth 8-7071] port 'rxrdyn' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
+WARNING: [Synth 8-7071] port 'txrdyn' of module 'PmodBT2_axi_uart16550_0_0' is unconnected for instance 'axi_uart16550_0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
+WARNING: [Synth 8-7023] instance 'axi_uart16550_0' of module 'PmodBT2_axi_uart16550_0_0' has 35 connections declared, but only 27 given [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:287]
+INFO: [Synth 8-6157] synthesizing module 'PmodBT2_pmod_bridge_0_0' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_pmod_bridge_0_0/synth/PmodBT2_pmod_bridge_0_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'pmod_concat' [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_pmod_bridge_0_0/src/pmod_concat.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'pmod_concat' (23#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_pmod_bridge_0_0/src/pmod_concat.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'PmodBT2_pmod_bridge_0_0' (24#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_pmod_bridge_0_0/synth/PmodBT2_pmod_bridge_0_0.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'PmodBT2' (25#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ipshared/74d9/src/PmodBT2.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'finalproject_design_PmodBT2_0_0' (26#1) [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/synth/finalproject_design_PmodBT2_0_0.v:56]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1125.648 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 2460.195 ; gain = 0.000 ; free physical = 1214 ; free virtual = 16655
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1125.648 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2460.195 ; gain = 0.000 ; free physical = 2820 ; free virtual = 18264
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1125.648 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 2460.195 ; gain = 0.000 ; free physical = 2820 ; free virtual = 18264
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1125.648 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2460.195 ; gain = 0.000 ; free physical = 2946 ; free virtual = 18392
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_ooc.xdc] for cell 'inst'
-Parsing XDC File [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_pmod_bridge_0_0/PmodBT2_pmod_bridge_0_0_board.xdc] for cell 'inst/pmod_bridge_0/inst'
-Finished Parsing XDC File [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_pmod_bridge_0_0/PmodBT2_pmod_bridge_0_0_board.xdc] for cell 'inst/pmod_bridge_0/inst'
-Parsing XDC File [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/PmodBT2_axi_gpio_0_0_board.xdc] for cell 'inst/axi_gpio_0/U0'
-Finished Parsing XDC File [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/PmodBT2_axi_gpio_0_0_board.xdc] for cell 'inst/axi_gpio_0/U0'
-Parsing XDC File [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/PmodBT2_axi_gpio_0_0.xdc] for cell 'inst/axi_gpio_0/U0'
-Finished Parsing XDC File [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/PmodBT2_axi_gpio_0_0.xdc] for cell 'inst/axi_gpio_0/U0'
-Parsing XDC File [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/PmodBT2_axi_uart16550_0_0_board.xdc] for cell 'inst/axi_uart16550_0/U0'
-Finished Parsing XDC File [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/PmodBT2_axi_uart16550_0_0_board.xdc] for cell 'inst/axi_uart16550_0/U0'
-Parsing XDC File [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/PmodBT2_axi_uart16550_0_0.xdc] for cell 'inst/axi_uart16550_0/U0'
-Finished Parsing XDC File [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/PmodBT2_axi_uart16550_0_0.xdc] for cell 'inst/axi_uart16550_0/U0'
-Parsing XDC File [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/finalproject_design_PmodBT2_0_0_board.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/finalproject_design_PmodBT2_0_0_board.xdc] for cell 'inst'
-Parsing XDC File [C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/finalproject_design_PmodBT2_0_0_propImpl.xdc].
+Parsing XDC File [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_pmod_bridge_0_0/PmodBT2_pmod_bridge_0_0_board.xdc] for cell 'inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_pmod_bridge_0_0/PmodBT2_pmod_bridge_0_0_board.xdc] for cell 'inst/pmod_bridge_0/inst'
+Parsing XDC File [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/PmodBT2_axi_gpio_0_0_board.xdc] for cell 'inst/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/PmodBT2_axi_gpio_0_0_board.xdc] for cell 'inst/axi_gpio_0/U0'
+Parsing XDC File [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/PmodBT2_axi_gpio_0_0.xdc] for cell 'inst/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/PmodBT2_axi_gpio_0_0.xdc] for cell 'inst/axi_gpio_0/U0'
+Parsing XDC File [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/PmodBT2_axi_uart16550_0_0_board.xdc] for cell 'inst/axi_uart16550_0/U0'
+Finished Parsing XDC File [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/PmodBT2_axi_uart16550_0_0_board.xdc] for cell 'inst/axi_uart16550_0/U0'
+Parsing XDC File [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/PmodBT2_axi_uart16550_0_0.xdc] for cell 'inst/axi_uart16550_0/U0'
+Finished Parsing XDC File [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/PmodBT2_axi_uart16550_0_0.xdc] for cell 'inst/axi_uart16550_0/U0'
+Parsing XDC File [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/finalproject_design_PmodBT2_0_0_board.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/finalproject_design_PmodBT2_0_0_board.xdc] for cell 'inst'
+Parsing XDC File [/home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/finalproject_design_PmodBT2_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/finalproject_design_PmodBT2_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1155.762 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2524.098 ; gain = 0.000 ; free physical = 2796 ; free virtual = 18250
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 12 instances were transformed.
   FDR => FDRE: 12 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1166.555 ; gain = 10.793
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2524.098 ; gain = 0.000 ; free physical = 2796 ; free virtual = 18251
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1166.555 ; gain = 40.906
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2887 ; free virtual = 18356
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1166.555 ; gain = 40.906
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2885 ; free virtual = 18355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_uart16550_0/U0. (constraint file  C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/dont_touch.xdc, line 17).
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/dont_touch.xdc, line 26).
-Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_gpio_0/U0. (constraint file  C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/dont_touch.xdc, line 33).
-Applied set_property KEEP_HIERARCHY = SOFT for inst/pmod_bridge_0/inst. (constraint file  C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/dont_touch.xdc, line 41).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_uart16550_0/U0. (constraint file  /home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/dont_touch.xdc, line 17).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/dont_touch.xdc, line 26).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_gpio_0/U0. (constraint file  /home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/dont_touch.xdc, line 33).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/pmod_bridge_0/inst. (constraint file  /home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/dont_touch.xdc, line 41).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/pmod_bridge_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_gpio_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/axi_uart16550_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1166.555 ; gain = 40.906
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2883 ; free virtual = 18354
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment__parameterized0'
@@ -298,7 +298,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'receive_state_reg' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'transmit_state_reg' using encoding 'sequential' in module 'tx16550'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1166.555 ; gain = 40.906
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2928 ; free virtual = 18404
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -363,25 +363,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1166.555 ; gain = 40.906
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2706 ; free virtual = 18187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1166.555 ; gain = 40.906
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2308 ; free virtual = 17791
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1176.973 ; gain = 51.324
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2217 ; free virtual = 17700
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1182.648 ; gain = 57.000
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2214 ; free virtual = 17697
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -399,37 +399,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1182.648 ; gain = 57.000
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2535 ; free virtual = 18032
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1182.648 ; gain = 57.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2535 ; free virtual = 18032
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1182.648 ; gain = 57.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2520 ; free virtual = 18017
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1182.648 ; gain = 57.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2519 ; free virtual = 18015
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1182.648 ; gain = 57.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2507 ; free virtual = 18004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1182.648 ; gain = 57.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2504 ; free virtual = 18001
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -474,18 +474,18 @@ Report Cell Usage:
 |12    |FDSE   |    51|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1182.648 ; gain = 57.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2500 ; free virtual = 17997
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 1182.648 ; gain = 16.094
-Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1182.648 ; gain = 57.000
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 2524.098 ; gain = 0.000 ; free physical = 2556 ; free virtual = 18053
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 2524.098 ; gain = 63.902 ; free physical = 2556 ; free virtual = 18053
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1182.648 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2524.098 ; gain = 0.000 ; free physical = 2538 ; free virtual = 18036
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1192.070 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2524.098 ; gain = 0.000 ; free physical = 2677 ; free virtual = 18175
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   FDR => FDRE: 8 instances
@@ -494,10 +494,10 @@ Synth Design complete, checksum: 2dfb4ce9
 INFO: [Common 17-83] Releasing license: Synthesis
 119 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 1192.070 ; gain = 66.422
-INFO: [Common 17-1381] The checkpoint 'C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/finalproject_design_PmodBT2_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP finalproject_design_PmodBT2_0_0, cache-ID = 6de76c0e2155c08e
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 2524.098 ; gain = 64.031 ; free physical = 2847 ; free virtual = 18346
+INFO: [Common 17-1381] The checkpoint '/home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/finalproject_design_PmodBT2_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP finalproject_design_PmodBT2_0_0, cache-ID = f38f2e972b46416e
 INFO: [Coretcl 2-1174] Renamed 30 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/finalproject_design_PmodBT2_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1/finalproject_design_PmodBT2_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file finalproject_design_PmodBT2_0_0_utilization_synth.rpt -pb finalproject_design_PmodBT2_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec  8 18:53:02 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 14 16:45:51 2021...

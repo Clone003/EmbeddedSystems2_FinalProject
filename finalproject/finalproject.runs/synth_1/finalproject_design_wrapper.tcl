@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/synth_1/finalproject_design_wrapper.tcl"
+  variable script "/home/user/Desktop/finalproject/finalproject.runs/synth_1/finalproject_design_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -78,49 +78,69 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.cache/wt [current_project]
-set_property parent.project_path C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.xpr [current_project]
+set_property webtalk.parent_dir /home/user/Desktop/finalproject/finalproject.cache/wt [current_project]
+set_property parent.project_path /home/user/Desktop/finalproject/finalproject.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part_repo_paths {C:/Users/johnr/AppData/Roaming/Xilinx/Vivado/2021.1/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.0 [current_project]
-set_property ip_repo_paths c:/Users/johnr/Projects/vivado-library [current_project]
+set_property ip_repo_paths {
+  /home/user/vivado-library
+  /home/software/digilent
+} [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.cache/ip [current_project]
+set_property ip_output_repo /home/user/Desktop/finalproject/finalproject.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/hdl/finalproject_design_wrapper.vhd
-add_files C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.srcs/sources_1/bd/finalproject_design/finalproject_design.bd
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_processing_system7_0_0/finalproject_design_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0/src/PmodOLED_pmod_bridge_0_0/PmodOLED_pmod_bridge_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0/src/PmodOLED_pmod_bridge_0_0/src/pmod_concat_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0/finalproject_design_PmodOLED_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0/src/PmodOLED_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0/src/PmodOLED_axi_quad_spi_0_0/PmodOLED_axi_quad_spi_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0/src/PmodOLED_axi_quad_spi_0_0/PmodOLED_axi_quad_spi_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0/src/PmodOLED_axi_quad_spi_0_0/PmodOLED_axi_quad_spi_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0/src/PmodOLED_axi_quad_spi_0_0/PmodOLED_axi_quad_spi_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0/src/PmodOLED_axi_gpio_0_0/PmodOLED_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0/src/PmodOLED_axi_gpio_0_0/PmodOLED_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0/src/PmodOLED_axi_gpio_0_0/PmodOLED_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_xbar_0/finalproject_design_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_rst_ps7_0_50M_0/finalproject_design_rst_ps7_0_50M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_rst_ps7_0_50M_0/finalproject_design_rst_ps7_0_50M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_rst_ps7_0_50M_0/finalproject_design_rst_ps7_0_50M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/PmodBT2_axi_uart16550_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/PmodBT2_axi_uart16550_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_uart16550_0_0/PmodBT2_axi_uart16550_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/finalproject_design_PmodBT2_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/PmodBT2_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/PmodBT2_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_axi_gpio_0_0/PmodBT2_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_pmod_bridge_0_0/PmodBT2_pmod_bridge_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0/src/PmodBT2_pmod_bridge_0_0/src/pmod_concat_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_auto_pc_0/finalproject_design_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.gen/sources_1/bd/finalproject_design/finalproject_design_ooc.xdc]
+read_vhdl -library xil_defaultlib /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/hdl/finalproject_design_wrapper.vhd
+add_files /home/user/Desktop/finalproject/finalproject.srcs/sources_1/bd/finalproject_design/finalproject_design.bd
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_processing_system7_0_0_1/finalproject_design_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_xbar_0_1/finalproject_design_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_rst_ps7_0_50M_0_1/finalproject_design_rst_ps7_0_50M_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_rst_ps7_0_50M_0_1/finalproject_design_rst_ps7_0_50M_0.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_rst_ps7_0_50M_0_1/finalproject_design_rst_ps7_0_50M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0_1/src/PmodOLED_pmod_bridge_0_0/PmodOLED_pmod_bridge_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0_1/src/PmodOLED_pmod_bridge_0_0/src/pmod_concat_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0_1/finalproject_design_PmodOLED_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0_1/src/PmodOLED_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0_1/src/PmodOLED_axi_quad_spi_0_0/PmodOLED_axi_quad_spi_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0_1/src/PmodOLED_axi_quad_spi_0_0/PmodOLED_axi_quad_spi_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0_1/src/PmodOLED_axi_quad_spi_0_0/PmodOLED_axi_quad_spi_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0_1/src/PmodOLED_axi_quad_spi_0_0/PmodOLED_axi_quad_spi_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0_1/src/PmodOLED_axi_gpio_0_0/PmodOLED_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0_1/src/PmodOLED_axi_gpio_0_0/PmodOLED_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodOLED_0_0_1/src/PmodOLED_axi_gpio_0_0/PmodOLED_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/PmodBT2_axi_uart16550_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/PmodBT2_axi_uart16550_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_uart16550_0_0/PmodBT2_axi_uart16550_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/finalproject_design_PmodBT2_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/PmodBT2_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/PmodBT2_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_axi_gpio_0_0/PmodBT2_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_pmod_bridge_0_0/PmodBT2_pmod_bridge_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodBT2_0_0_1/src/PmodBT2_pmod_bridge_0_0/src/pmod_concat_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/PmodHYGRO_axi_iic_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodHYGRO_0_0/src/PmodHYGRO_axi_iic_0_0/PmodHYGRO_axi_iic_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodHYGRO_0_0/finalproject_design_PmodHYGRO_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodHYGRO_0_0/src/PmodHYGRO_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/PmodHYGRO_axi_timer_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodHYGRO_0_0/src/PmodHYGRO_axi_timer_0_0/PmodHYGRO_axi_timer_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodHYGRO_0_0/src/PmodHYGRO_pmod_bridge_0_0/PmodHYGRO_pmod_bridge_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodHYGRO_0_0/src/PmodHYGRO_pmod_bridge_0_0/src/pmod_concat_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/PmodGPS_axi_uart16550_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/PmodGPS_axi_uart16550_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodGPS_0_0/src/PmodGPS_axi_uart16550_0_0/PmodGPS_axi_uart16550_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodGPS_0_0/finalproject_design_PmodGPS_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodGPS_0_0/src/PmodGPS_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/PmodGPS_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/PmodGPS_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodGPS_0_0/src/PmodGPS_axi_gpio_0_0/PmodGPS_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/PmodGPS_pmod_bridge_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_PmodGPS_0_0/src/PmodGPS_pmod_bridge_0_0/src/pmod_concat_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/ip/finalproject_design_auto_pc_0_1/finalproject_design_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/user/Desktop/finalproject/finalproject.gen/sources_1/bd/finalproject_design/finalproject_design_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -131,8 +151,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.srcs/constrs_1/imports/EmbeddedSystems2/Z7_7010_7020.xdc
-set_property used_in_implementation false [get_files C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.srcs/constrs_1/imports/EmbeddedSystems2/Z7_7010_7020.xdc]
+read_xdc /home/user/Desktop/finalproject/finalproject.srcs/constrs_1/imports/EmbeddedSystems2/Z7_7010_7020.xdc
+set_property used_in_implementation false [get_files /home/user/Desktop/finalproject/finalproject.srcs/constrs_1/imports/EmbeddedSystems2/Z7_7010_7020.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1639007882">
-  <File Type="PA-TCL" Name="finalproject_design_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="finalproject_design_wrapper_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="finalproject_design_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="finalproject_design_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="finalproject_design_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="finalproject_design_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="finalproject_design_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="finalproject_design_wrapper_timing_summary_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1639519127">
   <File Type="VDS-TIMING-PB" Name="finalproject_design_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="finalproject_design_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="finalproject_design_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="finalproject_design_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="finalproject_design_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="finalproject_design_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="finalproject_design_wrapper.vds"/>
+  <File Type="REPORTS-TCL" Name="finalproject_design_wrapper_reports.tcl"/>
+  <File Type="PA-TCL" Name="finalproject_design_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/finalproject_design/finalproject_design.bd">
@@ -56,9 +56,10 @@
     </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="finalproject_design_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="finalproject_design_PmodGPS_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="finalproject_design_PmodHYGRO_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="finalproject_design_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="finalproject_design_PmodOLED_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="finalproject_design_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="finalproject_design_PmodBT2_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="finalproject_design_PmodOLED_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="finalproject_design_xbar_0"/>
 </GenRun>

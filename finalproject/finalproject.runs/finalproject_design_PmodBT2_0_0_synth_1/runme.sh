@@ -6,14 +6,10 @@
 # Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 # 
 
-echo "This script was generated under a different operating system."
-echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
-exit
-
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/Vitis/2021.1/bin;C:/Xilinx/Vivado/2021.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2021.1/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2021.1/bin
+  PATH=/home/software/Xilinx/Vitis/2021.1/bin:/home/software/Xilinx/Vivado/2021.1/ids_lite/ISE/bin/lin64:/home/software/Xilinx/Vivado/2021.1/bin
 else
-  PATH=C:/Xilinx/Vitis/2021.1/bin;C:/Xilinx/Vivado/2021.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2021.1/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2021.1/bin:$PATH
+  PATH=/home/software/Xilinx/Vitis/2021.1/bin:/home/software/Xilinx/Vivado/2021.1/ids_lite/ISE/bin/lin64:/home/software/Xilinx/Vivado/2021.1/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1'
+HD_PWD='/home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodBT2_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

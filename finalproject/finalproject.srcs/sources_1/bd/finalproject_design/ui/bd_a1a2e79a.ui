@@ -1,36 +1,49 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.93265",
-   "Default View_TopLeft":"-16,1",
+   "Default View_ScaleFactor":"0.815094",
+   "Default View_TopLeft":"-382,0",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 4 -x 1060 -y 60 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 4 -x 1060 -y 90 -defaultsOSRD
-preplace port oled -pg 1 -lvl 4 -x 1060 -y 240 -defaultsOSRD
-preplace port bt2 -pg 1 -lvl 4 -x 1060 -y 390 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 1 -x 220 -y 110 -defaultsOSRD
-preplace inst PmodOLED_0 -pg 1 -lvl 3 -x 890 -y 240 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 570 -y 260 -defaultsOSRD
-preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 220 -y 330 -defaultsOSRD
-preplace inst PmodBT2_0 -pg 1 -lvl 3 -x 890 -y 400 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 220 420 440 730
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 230 410
-preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 430 450 740
-preplace netloc processing_system7_0_DDR 1 1 3 NJ 60 NJ 60 NJ
-preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 80 NJ 80 1040J
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 430 120n
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 230
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 710 210n
-preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 720 270n
-preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 710 290n
-preplace netloc PmodOLED_0_Pmod_out 1 3 1 N 240
-preplace netloc PmodBT2_0_Pmod_out 1 3 1 N 390
-levelinfo -pg 1 0 220 570 890 1060
-pagesize -pg 1 -db -bbox -sgen 0 0 1190 490
+preplace port DDR -pg 1 -lvl 5 -x 1360 -y 60 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1360 -y 80 -defaultsOSRD
+preplace port oled -pg 1 -lvl 5 -x 1360 -y 630 -defaultsOSRD
+preplace port bt2 -pg 1 -lvl 5 -x 1360 -y 460 -defaultsOSRD
+preplace port hygro -pg 1 -lvl 5 -x 1360 -y 960 -defaultsOSRD
+preplace port gps -pg 1 -lvl 5 -x 1360 -y 800 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 430 -y 110 -defaultsOSRD
+preplace inst PmodOLED_0 -pg 1 -lvl 4 -x 1180 -y 630 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 810 -y 690 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 2 -x 430 -y 330 -defaultsOSRD
+preplace inst PmodBT2_0 -pg 1 -lvl 4 -x 1180 -y 470 -defaultsOSRD
+preplace inst PmodHYGRO_0 -pg 1 -lvl 4 -x 1180 -y 970 -defaultsOSRD
+preplace inst PmodGPS_0 -pg 1 -lvl 4 -x 1180 -y 810 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -x 120 -y 120 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 3 220 230 650 430 1000
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 220 430 630
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 2 2 640 420 1010
+preplace netloc xlconcat_0_dout 1 1 1 NJ 120
+preplace netloc PmodGPS_0_gps_uart_interrupt 1 0 5 20 220 NJ 220 NJ 220 NJ 220 1340
+preplace netloc PmodBT2_0_Pmod_out 1 4 1 NJ 460
+preplace netloc PmodOLED_0_Pmod_out 1 4 1 NJ 630
+preplace netloc processing_system7_0_DDR 1 2 3 NJ 60 NJ 60 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 NJ 80 NJ 80 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 660 120n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 N 620
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 1 970 600n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 3 1 960 460n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 3 1 1020 440n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 3 1 990 700n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 3 1 980 720n
+preplace netloc PmodHYGRO_0_Pmod_out 1 4 1 NJ 960
+preplace netloc ps7_0_axi_periph_M06_AXI 1 3 1 970 740n
+preplace netloc ps7_0_axi_periph_M07_AXI 1 3 1 960 760n
+preplace netloc PmodGPS_0_Pmod_out 1 4 1 N 800
+levelinfo -pg 1 0 120 430 810 1180 1360
+pagesize -pg 1 -db -bbox -sgen 0 0 1500 1060
 "
 }
 {
-   "da_axi4_cnt":"4",
+   "da_axi4_cnt":"9",
    "da_ps7_cnt":"1"
 }

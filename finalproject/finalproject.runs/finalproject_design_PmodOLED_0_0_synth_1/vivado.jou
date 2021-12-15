@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2021.1 (64-bit)
-# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Wed Dec  8 18:51:57 2021
-# Process ID: 11788
-# Current directory: C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodOLED_0_0_synth_1
-# Command line: vivado.exe -log finalproject_design_PmodOLED_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finalproject_design_PmodOLED_0_0.tcl
-# Log file: C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodOLED_0_0_synth_1/finalproject_design_PmodOLED_0_0.vds
-# Journal file: C:/Users/johnr/Projects/EmbeddedSystems2_FinalProject/finalproject/finalproject.runs/finalproject_design_PmodOLED_0_0_synth_1\vivado.jou
+# Start of session at: Tue Dec 14 16:44:48 2021
+# Process ID: 1420609
+# Current directory: /home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodOLED_0_0_synth_1
+# Command line: vivado -log finalproject_design_PmodOLED_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finalproject_design_PmodOLED_0_0.tcl
+# Log file: /home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodOLED_0_0_synth_1/finalproject_design_PmodOLED_0_0.vds
+# Journal file: /home/user/Desktop/finalproject/finalproject.runs/finalproject_design_PmodOLED_0_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source finalproject_design_PmodOLED_0_0.tcl -notrace
