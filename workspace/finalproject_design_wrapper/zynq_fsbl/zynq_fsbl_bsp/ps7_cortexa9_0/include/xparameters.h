@@ -44,6 +44,32 @@
 
 /******************************************************************/
 
+/* Definitions for driver PMODGPS */
+#define XPAR_PMODGPS_NUM_INSTANCES 1
+
+/* Definitions for peripheral PMODGPS_0 */
+#define XPAR_PMODGPS_0_DEVICE_ID 0
+#define XPAR_PMODGPS_0_AXI_LITE_UART_BASEADDR 0x40006000
+#define XPAR_PMODGPS_0_AXI_LITE_UART_HIGHADDR 0x40007FFF
+#define XPAR_PMODGPS_0_AXI_LITE_GPIO_BASEADDR 0x40004000
+#define XPAR_PMODGPS_0_AXI_LITE_GPIO_HIGHADDR 0x40004FFF
+
+
+/******************************************************************/
+
+/* Definitions for driver PMODHYGRO */
+#define XPAR_PMODHYGRO_NUM_INSTANCES 1
+
+/* Definitions for peripheral PMODHYGRO_0 */
+#define XPAR_PMODHYGRO_0_DEVICE_ID 0
+#define XPAR_PMODHYGRO_0_AXI_LITE_IIC_BASEADDR 0x43C00000
+#define XPAR_PMODHYGRO_0_AXI_LITE_IIC_HIGHADDR 0x43C0FFFF
+#define XPAR_PMODHYGRO_0_AXI_LITE_TMR_BASEADDR 0x43C10000
+#define XPAR_PMODHYGRO_0_AXI_LITE_TMR_HIGHADDR 0x43C1FFFF
+
+
+/******************************************************************/
+
 /* Definitions for driver PMODOLED */
 #define XPAR_PMODOLED_NUM_INSTANCES 1
 
@@ -326,6 +352,16 @@
 #define XPAR_XQSPIPS_0_QSPI_MODE 0
 #define XPAR_XQSPIPS_0_QSPI_BUS_WIDTH 2
 
+
+/******************************************************************/
+
+/* Definitions for Fabric interrupts connected to ps7_scugic_0 */
+#define XPAR_FABRIC_PMODGPS_0_GPS_UART_INTERRUPT_INTR 61U
+
+/******************************************************************/
+
+/* Canonical definitions for Fabric interrupts connected to ps7_scugic_0 */
+#define XPAR_FABRIC_PMODGPS_0_VEC_ID XPAR_FABRIC_PMODGPS_0_GPS_UART_INTERRUPT_INTR
 
 /******************************************************************/
 

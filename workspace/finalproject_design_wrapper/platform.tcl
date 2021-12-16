@@ -9,7 +9,7 @@
 # -out option specifies the output directory of the platform project.
 
 platform create -name {finalproject_design_wrapper}\
--hw {/home/user/Desktop/finalproject_design_wrapper.xsa}\
+-hw {/home/user/Desktop/finalproject/finalproject_design_wrapper.xsa}\
 -out {/home/user/workspace}
 
 platform write
@@ -20,5 +20,12 @@ domain active {zynq_fsbl}
 domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
 platform generate
-platform config -updatehw {/home/user/Desktop/finalproject/finalproject_design_wrapper.xsa}
-platform generate -domains 
+platform clean
+platform generate
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
